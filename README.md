@@ -1,0 +1,2 @@
+# MCInfoPlugin
+一个可以获取mc档案和皮肤的mirai机器人插件
