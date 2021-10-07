@@ -3,6 +3,10 @@
 
 这是一个基于[mirai](https://github.com/mamoe/mirai) 框架的qq机器人插件
 
+语法/编译版本: `Java11`
+
+用到的依赖 [MinecraftInfoAPI](https://github.com/MX233/MinecraftInfoAPI)
+
 ### 功能
 - `获取Minecraft java版玩家档案信息(UUID,曾用名)`
 - `获取Minecraft java版玩家皮肤`

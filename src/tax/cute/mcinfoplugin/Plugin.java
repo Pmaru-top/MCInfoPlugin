@@ -14,7 +14,7 @@ public class Plugin extends JavaPlugin {
     public Plugin() {
         super(new JvmPluginDescriptionBuilder(
                         "tax.cute.mcinfoplugin", // id
-                        "1.0.0" // version
+                        "1.1.0" // version
                 )
                         .name("MCInfoPlugin")
                         .author("CuteStar")
@@ -26,14 +26,15 @@ public class Plugin extends JavaPlugin {
     @Override
     public void onLoad(PluginComponentStorage pcs) {
         getLogger().info("MCInfoPluginLoading");
-        getLogger().info("Author:CuteStar");
+        getLogger().info("Author: CuteStar");
+        getLogger().info("Version: 1.1");
         getLogger().info("Github: https://github.com/MX233/MCInfoPlugin");
     }
 
     private void register() {
-        mcSkin = new MCSkin();
-        mcInfo = new MCInfo();
-        mcSkinFile = new MCSkinFile();
+        mcSkin = new MCSkin(this);
+        mcInfo = new MCInfo(this);
+        mcSkinFile = new MCSkinFile(this);
     }
 
     @Override
